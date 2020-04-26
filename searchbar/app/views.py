@@ -148,7 +148,7 @@ def filtr(request):
     qs = Scholarship.objects.all()
     countries = Country.objects.all()
     # name_contains_query=request.GET.get('q')
-    name_contains_query = request.GET.get('search_input')
+    name_contains_query = request.GET.get('title_or_author')
     # print(name_contains_query)
     # description_exact_query = request.GET.get('id_exact')
     # title_or_author_query = request.GET.get('title_or_author')
@@ -161,7 +161,7 @@ def filtr(request):
     # not_reviewed = request.GET.get('notReviewed')
     # p=request.GET.get('title_contains')
     if is_valid_queryparam(name_contains_query):
-        qs = qs.filtr(Q(name__icontains=name_contains_query) | Q(description__icontains=name_contains_query))
+        qs = qs.filtr(Q(name__icontains=name_contains_query) | Q(description__icontains=name_contains_query)).distinct()
 
                        # | Q(url__icontains=name_contains_query)
                        # | Q(city__icontains=name_contains_query)

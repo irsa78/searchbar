@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcf90edb-312b-4895-86f8-4f5d49662ab7" name="Default Changelist" comment="">
+    <list default="true" id="fcf90edb-312b-4895-86f8-4f5d49662ab7" name="Default Changelist" comment="comit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searchbar/app/templates/find_bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/searchbar/app/templates/find_bootstrap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searchbar/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchbar/app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +56,25 @@
       <option name="presentableId" value="Default" />
       <updated>1587729254527</updated>
     </task>
+    <task id="LOCAL-00001" summary="comit">
+      <created>1588061320415</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588061320415</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="comit" />
+    <option name="LAST_COMMIT_MESSAGE" value="comit" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="317" y="0" key="CommitChangelistDialog2" timestamp="1588061318214">
+    <state x="317" y="0" key="CommitChangelistDialog2" timestamp="1588061915649">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="317" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1588061318214" />
+    <state x="317" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1588061915649" />
     <state x="64" y="0" key="SettingsEditor" timestamp="1587758799603">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

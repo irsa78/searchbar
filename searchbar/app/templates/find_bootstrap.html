@@ -15,11 +15,11 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                  <a class="nav-link" href="#">Bootstrap</a>
+                  <a class="nav-link" href="#">Scholarship Search Engine</a>
               </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">React</a>
-              </li>
+<!--              <li class="nav-item">-->
+<!--                  <a class="nav-link" href="#">React</a>-->
+<!--              </li>-->
             </ul>
         </div>
     </nav>
@@ -31,7 +31,7 @@
         <div class="form-row">
             <div class="form-group col-12">
                 <div class="input-group">
-                    <input class="form-control py-2 border-right-0 border" type="search" name="cities" placeholder="Title contains..." />
+                    <input class="form-control py-2 border-right-0 border" type="search" name="searchbar" placeholder="Title contains..." />
                     <span class="input-group-append">
                         <div class="input-group-text bg-transparent">
                             <i class="fa fa-search"></i>
@@ -42,47 +42,6 @@
         </div>
 
 
-<!--        <div class="form-row">-->
-<!--            <div class="form-group col-12">-->
-<!--                <div class="input-group">-->
-<!--                    <input class="form-control py-2 border-right-0 border" type="search" name="id_exact" placeholder="ID exact..." />-->
-<!--                    <span class="input-group-append">-->
-<!--                        <div class="input-group-text bg-transparent">-->
-<!--                            <i class="fa fa-search"></i>-->
-<!--                        </div>-->
-<!--                    </span>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-        <div class="form-row">
-            <div class="form-group col-12">
-                <div class="input-group">
-                    <input class="form-control py-2 border-right-0 border" type="search" name="title_or_author" placeholder="Title or author..." />
-                    <span class="input-group-append">
-                        <div class="input-group-text bg-transparent">
-                            <i class="fa fa-search"></i>
-                        </div>
-                    </span>
-                </div>
-            </div>
-        </div>
-<!--        <div class="form-row">-->
-<!--          <div class="form-group col-md-2 col-lg-2">-->
-<!--            <label for="viewCountMin">Minimum View Count</label>-->
-<!--            <input type="number" min=0 class="form-control" id="viewCountMin" placeholder="0" name="view_count_min">-->
-<!--          </div>-->
-<!--          <div class="form-group col-md-2 col-lg-2">-->
-<!--            <label for="viewCountMax">Maximum View Count</label>-->
-<!--            <input type="number" min=0 class="form-control" id="viewCountMax" placeholder="10000?" name="view_count_max">-->
-<!--          </div>-->
-<!--          <div class="form-group col-md-2 col-lg-2">-->
-<!--            <label for="publishDateMin">Publish date minimum</label>-->
-<!--            <input type="date" class="form-control" id="publishDateMin" name="date_min">-->
-<!--          </div>-->
-<!--          <div class="form-group col-md-2 col-lg-2">-->
-<!--            <label for="publishDateMax">Publish date maximum</label>-->
-<!--            <input type="date" class="form-control" id="publishDateMax" name="date_max">-->
-<!--          </div>-->
           <div class="form-group col-md-4">
             <label for="countries">countries</label>
             <select id="countries" class="form-control" name="countries">
@@ -94,7 +53,7 @@
           </div>
         </div>
           <div class="form-group col-md-4">
-            <label for="cities">Category</label>
+            <label for="cities">City</label>
             <select id="cities" class="form-control" name="cities">
               <option selected>Choose...</option>
               {% for cat in cities %}
@@ -126,23 +85,26 @@
 
       <div class="row">
         <ul>
+            
           {% for Scholarship in queryset %}
             <li>
-              {{ Scholarship.name }}
-              <span>research: {{ Scholarship.research }}</span>
+             <span>Nmae: {{ Scholarship.name }}</span><br>
+              <span>Research: {{ Scholarship.research }}</span><br>
               <span>
-                {% for cat in Scholarship.Country.all %}
-                  {{ cat }}
+                {% for cat in Scholarship.country.all %}
+                 <span>Country:  {{ cat }}</span><br>
                 {% endfor %}
               </span>
                 <span>
-                {% for cat in Scholarship.City.all %}
-                  {{ cat }}
+                {% for cat in Scholarship.city.all %}
+                  <span> City:  {{ cat }}</span>
                 {% endfor %}
               </span>
-              <span>Publish date: {{ Scholarship.description }}</span>
-<!--              <span>View count: {{ journal.views }}</span>-->
-<!--              <span>Reviewed: {{ journal.reviewed }}</span>-->
+              <span>Description: {{ Scholarship.description }}</span><br>
+              <span>Url: {{ Scholarship.url }}</span><br>
+<!--              <span>City: {{ Scholarship.name.city }}</span>-->
+<!--              <span>Country: {{ Scholarship.name.country }}</span>-->
+
             </li>
             <hr />
           {% endfor %}

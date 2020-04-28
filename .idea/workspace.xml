@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcf90edb-312b-4895-86f8-4f5d49662ab7" name="Default Changelist" comment="" />
+    <list default="true" id="fcf90edb-312b-4895-86f8-4f5d49662ab7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchbar/app/templates/find_bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/searchbar/app/templates/find_bootstrap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchbar/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/searchbar/app/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,13 +61,17 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="317" y="0" key="CommitChangelistDialog2" timestamp="1588061236555">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="317" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1588061236555" />
     <state x="64" y="0" key="SettingsEditor" timestamp="1587758799603">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="64" y="0" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1587758799603" />
-    <state x="352" y="173" key="com.intellij.ide.util.TipDialog" timestamp="1587885033957">
+    <state x="352" y="173" key="com.intellij.ide.util.TipDialog" timestamp="1588057721325">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="352" y="173" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1587885033957" />
+    <state x="352" y="173" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1588057721325" />
   </component>
 </project>
